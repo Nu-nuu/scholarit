@@ -1,0 +1,247 @@
+.chapter-container {
+  display: grid;
+  padding: 0px 10px 0px 10px;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows:minmax(auto, 0.5fr) minmax(auto, 0.5fr) 0px 0px minmax(auto, 0.5fr) 300px 250px 300px 300px 300px 100px 550px ;
+  font-size: large;
+}
+
+.item-1 {
+  background-color: #314995;
+  color: white;
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+  align-items: center;
+  padding: 30px 0px 50px 90px;
+}
+
+.item-2 {
+  background-color: #314995;
+  grid-column: 4 / 6;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-3 {
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+  background-color: #f2efe9;
+}
+
+.item-4 {
+  grid-row: 3 / 5;
+  grid-column: 1/ 6;
+  background-color: #314995;
+}
+
+.item-5 {
+  grid-column: 1/6;
+  grid-row: 5 / 6;
+  background-color: bisque;
+}
+
+.item-6 {
+  background-color: #ffe4c4;
+  grid-column: 1 / 4;
+  grid-row: 6 / 9;
+}
+
+.item-7 {
+  background-color: bisque;
+  grid-column: 4 / 6;
+  grid-row: 6 / 9;
+}
+
+.item-8 {
+  background-color: whitesmoke;
+  grid-column: 1/ 6;
+  grid-row: 9 / 11;
+  justify-content: center;
+  place-items: center;
+}
+
+/* .item-9 {
+  padding: 126px 16px 126px 0px;
+  background-color: whitesmoke;
+  grid-column: 5/ 6;
+  grid-row: 9 / 11;
+} */
+
+.item-10 {
+
+  background-color: #5d6da0;
+  grid-column: 1 / 6;
+  grid-row: 11 / 12;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.item-11{
+  background-color: #314995;
+  grid-column: 1 / 6;
+  grid-row: 12 /14;
+}
+
+.question_index_clicked {
+  background: #003566 ;
+  width: fit-content;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 5px;
+  min-width: 40px;
+  text-align: center;
+  color: white;
+}
+
+.question_index {
+  width: fit-content;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 5px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.question_index:hover {
+  box-shadow: 2px 2px 0 #333, 2px 2px 200px #003566 inset;
+  color: white;
+}
+
+
+/* ///////////////////////////////////////////////////// */
+.buttonDetailContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+.thebackbutton {
+  padding: 0.8em 1.8em;
+  border: 2px solid #2c3e50;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.thebackbutton::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #F02D3A;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.thebackbutton:hover::before {
+  width: 105%;
+}
+
+.thebackbutton:hover {
+  color: white;
+  box-shadow: 20px 20px 27px #9b9b9b, -20px -20px 27px #ffffff;
+}
+
+/* //////////////////////////////////// */
+
+
+.thesubmitbutton {
+  padding: 0.8em 1.8em;
+  border: 2px solid #2c3e50;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.thesubmitbutton::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #0EAD69;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.thesubmitbutton:hover::before {
+  width: 105%;
+}
+
+.thesubmitbutton:hover {
+  color: white;
+  box-shadow: 20px 20px 27px #9b9b9b, -20px -20px 27px #ffffff;
+}
+
+/* //////////////////////////////////// */
+
+
+.thetryagainbutton {
+  padding: 0.8em 1.8em;
+  border: 2px solid #2c3e50;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.thetryagainbutton::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #0EAD69;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.thetryagainbutton:hover::before {
+  width: 105%;
+}
+
+.thetryagainbutton:hover {
+  color: white;
+  box-shadow: 20px 20px 27px #9b9b9b, -20px -20px 27px #ffffff;
+}

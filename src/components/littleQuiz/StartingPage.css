@@ -1,0 +1,20 @@
+
+.start_btn {
+  border: 0;
+  outline: 0;
+  width: 60%;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: rgb(25, 42, 86);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: block;
+  margin: 11rem auto;
+}
+
+.top_score {
+  font-weight: bold;
+  position: absolute;
+}

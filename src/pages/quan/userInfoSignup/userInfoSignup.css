@@ -1,0 +1,166 @@
+.userInfoSignup {
+    height: 100vh;
+}
+
+.userInfoSignup .css-4jnixx-MuiStack-root > .MuiTextField-root {
+    min-width: 0 !important;
+}
+
+.userInfoSignup .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+    width: 97%;
+}
+
+.userInfoSignup .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userInfoSignup .flex-left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.userInfoSignup .login__title {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.userInfoSignup .css-160unip > .MuiTextField-root {
+    min-width: 0 !important;
+}
+
+.userInfoSignup .css-1bn53lx {
+    width: 97% !important;
+}
+
+.userInfoSignup .login__desc {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: #252626;
+    margin-bottom: 30px;
+    word-spacing: 1px;
+    text-align: justify;
+    border-bottom: solid 2px;
+    padding-bottom: 20px;
+}
+
+.userInfoSignup .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userInfoSignup .top_left_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: solid orange 8px;
+    outline: solid #7b7b7b 8px;
+    cursor: pointer;
+}
+.userInfoSignup .overlay {
+    position: absolute;
+    top: -9px;
+    bottom: 0;
+    left: 17px;
+    right: 0;
+    height: 117%;
+    width: 78%;
+    opacity: 0;
+    transition: 0.5s ease;
+    border-radius: 169px;
+    background-color: #15151580;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userInfoSignup .container:hover .overlay {
+    opacity: 1;
+}
+
+.blue-text {
+    color: #314995;
+}
+
+.orange-text {
+    color: #fda94f;
+}
+
+.userInfoSignup .login__text {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 10px;
+}
+
+.userInfoSignup .login__input {
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+.userInfoSignup .login__input label {
+    color: black;
+    font-family: "Inter", sans-serif !important;
+}
+
+.userInfoSignup .login__input input {
+    height: 59px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif !important;
+}
+
+.userInfoSignup .login__input fieldset {
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.userInfoSignup .login__view__password__btn {
+    color: black !important;
+    cursor: pointer;
+}
+
+.userInfoSignup .login__validation__error {
+    padding-left: 10px;
+    height: 12px;
+    color: #d32f2f;
+    font-size: 12px;
+}
+
+.userInfoSignup .login__btn {
+    height: 59px;
+    width: 100%;
+    background-color: #314995 !important;
+    text-transform: capitalize !important;
+    font-weight: 700 !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+.userInfoSignup .login__link {
+    float: right;
+    display: inline-block;
+    text-align: right !important;
+    color: #8b8b8b !important;
+    margin-top: 15px !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+.userInfoSignup .login__alert {
+    background-color: white !important;
+    padding-top: 10px !important;
+    color: #d32f2f !important;
+    border: 2px solid #d32f2f;
+}
+
+.userInfoSignup .login__alert__success {
+    background-color: white !important;
+    padding-top: 10px !important;
+    color: #2e7d32 !important;
+    border: 2px solid #2e7d32;
+}

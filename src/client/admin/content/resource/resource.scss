@@ -1,0 +1,43 @@
+@import "../../style/variables.scss";
+@import "../../style/responsive.scss";
+
+.add_resource {
+  background-color: $main-color;
+  color: black;
+  padding: 2rem;
+  .add_chapter_material {
+    .button_upload {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+  .add_resource_video {
+  }
+  .add_resource_image {
+  }
+  .add_resource_material {
+  }
+  .title_items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    .box_course_cl2 {
+      .form_control {
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        input[type="text"] {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #f5f5f5;
+          border-radius: 4px;
+          background-color: #f5f5f5;
+          color: black;
+        }
+      }
+    }
+  }
+}

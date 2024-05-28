@@ -1,0 +1,107 @@
+.signup {
+  height: 100vh;
+}
+
+.signup .flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup .login__title {
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.signup .container-class-grid{
+  max-width: 100% !important;
+}
+
+.blue-text {
+  color: #314995;
+}
+
+.orange-text {
+  color: #fda94f;
+}
+
+.signup .login__text {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
+}
+.signup .container-class {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjust the number of columns based on your needs */
+  grid-gap: 20px; /* Adjust the value to control the size of the gap */
+}
+
+
+.signup .login__input {
+  border-radius: 10px;
+  background-color: #f1f1f1;
+}
+
+.signup .login__input label {
+  color: black;
+  font-family: "Inter", sans-serif !important;
+}
+
+.signup .login__input input {
+  height: 59px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif !important;
+}
+
+.signup .login__input fieldset {
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.signup .login__view__password__btn {
+  color: black !important;
+  cursor: pointer;
+}
+
+.signup .login__validation__error {
+  padding-left: 10px;
+  height: 12px;
+  color: #d32f2f;
+  font-size: 12px;
+}
+
+.signup .login__btn {
+  height: 59px;
+  width: 100%;
+  background-color: #314995 !important;
+  text-transform: capitalize !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.signup .login__link {
+  float: right;
+  display: inline-block;
+  text-align: right !important;
+  color: #8b8b8b !important;
+  margin-top: 15px !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.signup .login__alert {
+  background-color: white !important;
+  padding-top: 10px !important;
+  color: #d32f2f !important;
+  border: 2px solid #d32f2f;
+}
+
+.signup .login__alert__success {
+  background-color: white !important;
+  padding-top: 10px !important;
+  color: #2e7d32 !important;
+  border: 2px solid #2e7d32;
+}

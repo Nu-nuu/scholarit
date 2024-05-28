@@ -1,0 +1,97 @@
+.loginUser {
+    height: 100vh;
+}
+
+.loginUser .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginUser .login__title {
+    margin-bottom: 60px;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blue-text {
+    color: #314995;
+}
+
+.orange-text {
+    color: #fda94f;
+}
+
+.loginUser .login__text {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 10px;
+}
+
+.loginUser .login__input {
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+.loginUser .login__input label {
+    color: black;
+    font-family: "Inter", sans-serif !important;
+}
+
+.loginUser .login__input input {
+    height: 59px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif !important;
+    width: 24rem;
+}
+
+.loginUser .login__input fieldset {
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.loginUser .login__view__password__btn {
+    color: black !important;
+    cursor: pointer;
+}
+
+.loginUser .login__validation__error {
+    padding-left: 10px;
+    height: 12px;
+    color: #d32f2f;
+    font-size: 12px;
+}
+
+.loginUser .login__btn {
+    height: 59px;
+    background-color: #314995 !important;
+    text-transform: capitalize !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    font-family: "Inter", sans-serif !important;
+    font-size: x-large;
+}
+
+.loginUser .login__link {
+    display: inline-block;
+    color: #8b8b8b !important;
+    padding-right: 10px;
+    font-family: "Inter", sans-serif !important;
+    float: right;
+}
+
+.loginUser .login__forgot {
+    display: inline-block;
+    color: #8b8b8b !important;
+    padding-right: 10px;
+    font-family: "Inter", sans-serif !important;
+    text-decoration: underline;
+}
+
+.loginUser .login__alert {
+    background-color: white !important;
+    padding-top: 10px !important;
+    color: #d32f2f !important;
+    border: 2px solid #d32f2f;
+}

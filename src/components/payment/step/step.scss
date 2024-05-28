@@ -1,0 +1,154 @@
+.step {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 3px 1px 10px 0px #2e2e2e;
+  h3 {
+    color: #314995;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .step_header {
+    display: flex;
+    justify-content: center;
+    color: #2d4285;
+    font-weight: 900;
+  }
+  .line {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .step_body {
+    .summary_material {
+      .material {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .discount {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      .discount_content {
+        padding: 18px;
+        border-radius: 5px;
+        background-color: #314995;
+        color: white;
+      }
+      .discount_button {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #314995;
+        color: white;
+        border: none;
+      }
+    }
+    .discount_input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      .cancel_button {
+        display: flex;
+        align-items: center;
+        padding: 18px;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        color: black;
+        border: none;
+      }
+    }
+    .step_qr {
+      padding: 0.75rem;
+      padding-top: 1rem;
+      display: flex;
+      justify-content: center;
+      img {
+        height: 280px;
+        width: 280px;
+      }
+    }
+    .step_wait {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .step_box {
+        align-items: center;
+        display: flex;
+        padding: 8rem;
+      }
+    }
+    .step_complete {
+      .step_box {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 5rem;
+        .step_icon {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+  .step_sbody {
+    
+    .method {
+      .method_flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        gap: 1rem;
+      }
+      .method_button {
+        width: 150px;
+        height: 44px;
+      }
+    }
+    .pay_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      .payment_button {
+        width: 169px;
+        height: 44px;
+      }
+    }
+    .code {
+      padding: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      background-color: #e8eef6;
+      color: black;
+    }
+    .note {
+      font-weight: bold;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .step_footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-decoration-line: underline;
+  }
+}

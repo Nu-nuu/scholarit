@@ -1,0 +1,54 @@
+@import "../../style/variables.scss";
+@import "../../style/responsive.scss";
+
+.list_category {
+  .header_list_category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .body_list_category {
+    padding: 1rem;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid $soft-bg;
+      }
+
+      th {
+        color: $main-color;
+        font-weight: bold;
+      }
+
+      td {
+        input[type="text"] {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid $soft-bg;
+          border-radius: 4px;
+          background-color: $soft-bg;
+          color: $main-color;
+        }
+
+        button {
+          padding: 6px 12px;
+          margin-right: 5px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .footer_list_category {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+  }
+}

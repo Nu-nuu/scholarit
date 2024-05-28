@@ -1,0 +1,25 @@
+{
+    "title": "Math Scholarships: Help you achieve your dreams",
+    "blocks": [
+        {
+            "id": 1,
+            "title": "Students solving math problems in Scholarit",
+            "description": "Access a library of math problems to practice your skills",
+            "icon": "idea.svg"
+           
+        },
+        {
+            "id": 2,
+            "title": "Students working on math homework with Scholarit",
+            "description": "A variety of tools to help you complete your math homework",
+            "icon": "homework.svg"
+        },
+        {
+            "id": 3,
+            "title": "Students participating in a math competition with Scholarit",
+            "description": "Scholarit will help you to achieve your dreams of studying math",
+            "icon": "competition.svg"
+        }
+    ]
+}
+

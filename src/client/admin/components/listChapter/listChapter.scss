@@ -1,0 +1,23 @@
+@import "../../style/variables.scss";
+
+.list_chapter {
+  background-color: $main-color;
+  color: black;
+  padding: 2rem;
+  border-radius: 3px;
+
+  .header_list_chapter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .body_list_chapter {
+    padding: 1rem;
+
+    .item_list_chapter {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}

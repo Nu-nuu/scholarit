@@ -1,0 +1,17 @@
+@import "../../style/variables.scss";
+@import "../../style/responsive.scss";
+
+.course_page {
+  background-color: $main-color;
+  .flex_container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+  }
+
+  .activity_page {
+    color: black;
+    padding: 2rem;
+    border-radius: 3px;
+    
+  }
+}

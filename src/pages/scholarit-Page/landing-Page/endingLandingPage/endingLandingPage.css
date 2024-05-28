@@ -1,0 +1,73 @@
+.ending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    border-top: 1px solid #E6E6E6;
+}
+
+.header-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+ .header-footer h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    color: #1e1c24;
+    margin-bottom: 20px;
+}
+
+ .header-footer h5 {
+    width: 800px;
+    max-width: 95%;
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 35px;
+    text-align: center;
+    color: #1e1c24;
+    margin: auto;
+}
+
+ .form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+ .form-group input {
+    width: 320px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #EBEBEB;
+    border-radius: 40px;
+    padding: 20px 14px;
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: rgba(30, 28, 36, 0.85);
+    opacity: 0.36;
+}
+
+ .form-group button {
+    font-family: inherit;
+    padding: 20px 50px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    background: #525FFB;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    line-height: 27px;
+    text-align: left;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/** End Footer Css **/

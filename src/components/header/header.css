@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #314995;
+    padding: 25px 100px;
+    gap: 30px;
+}
+
+.header .logo {
+    width: 32%;
+    height: 80%;
+}
+.header .homepage_search_box {
+    border: white solid 2px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    padding: 5px 21px;
+    color: white;
+    gap: 10px;
+    width: 32%;
+}
+.header .homepage_search_text {
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+}
+.header .homepage_search_text::placeholder {
+    color: white;
+}
+.header .flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px
+}
+
+.header .hDbutton {
+  padding: 10px;
+}

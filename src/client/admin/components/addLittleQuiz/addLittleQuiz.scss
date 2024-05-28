@@ -1,0 +1,45 @@
+@import "../../style/variables.scss";
+@import "../../style/responsive.scss";
+
+.add_little_quiz {
+  background-color: $main-color;
+  color: black;
+  padding: 2rem;
+
+  .title_items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+
+    .option_material{
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .box_course_cl2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .question_material{
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+      }
+      .items_material{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .content_chapter {
+        padding: 18px;
+        outline: none;
+        resize: none;
+        font-size: 16px;
+        border-radius: 5px;
+        border-color: $soft-bg;
+      }
+    }
+  }
+}

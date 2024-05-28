@@ -1,0 +1,19 @@
+@import "../../style/variables.scss";
+@import "../../style/responsive.scss";
+
+.add_category {
+  .category_content {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid $soft-bg;
+      border-radius: 4px;
+      background-color: $soft-bg;
+      color: $main-color;
+    }
+  }
+}

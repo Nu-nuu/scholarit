@@ -1,0 +1,18 @@
+.body {
+    display: flex;
+    /* flex-direction: row; */
+    min-height: 100vh;
+    /* background-image: ; */
+}
+
+.component {
+    padding: 0 8%;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f2efe9;
+}
+
+.nav {
+    background-color: #edf2f7;
+}

@@ -1,0 +1,22 @@
+@import "../../style/variables.scss";
+@import "../../style/responsive.scss";
+
+.category_admin {
+  .header_category {
+  }
+  .body_category {
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+    .body_category_content {
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid $soft-bg;
+      background-color: $dark-bg;
+      .pie_chart {
+        height: 655px;
+        width: 525px;
+      }
+    }
+  }
+}

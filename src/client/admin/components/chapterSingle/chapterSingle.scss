@@ -1,0 +1,41 @@
+@import "../../style/variables.scss";
+@import "../../style/responsive.scss";
+
+.chapter_single {
+  background-color: $main-color;
+  color: black;
+  padding: 2rem;
+  .chapter_single_body {
+    display: flex;
+    gap: 3rem;
+    padding-top: 0.75rem;
+  }
+  .description_box {
+    display: flex;
+    justify-content: left;
+    padding-top: 1rem;
+    .title_items {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+      .box_course_cl2 {
+        flex: 1;
+        text-align: left;
+        padding: 10px;
+        padding-left: 15px;
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        margin-right: 10px;
+      }
+    }
+  }
+  .title_chapter_resource{
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+  }
+  .resource_little_quiz{
+    margin-left: 1rem;
+  }
+
+}

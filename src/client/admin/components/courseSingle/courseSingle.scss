@@ -1,0 +1,91 @@
+@import "../../style/variables.scss";
+@import "../../style/responsive.scss";
+
+.single_course {
+  background-color: $main-color;
+  color: black;
+  padding: 2rem;
+  border-radius: 3px;
+  .info {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .course_title {
+    display: flex;
+    justify-content: left;
+  }
+  .background_course {
+    padding-left: 2rem;
+
+    .flex_container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-top: 1rem;
+      justify-content: space-between;
+    }
+    .box_course_cl1 {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      margin-right: 10px;
+      width: 18rem;
+    }
+    .box_course_cl2 {
+      flex: 1;
+      text-align: left;
+      padding: 10px;
+      padding-left: 15px;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      margin-right: 10px;
+    }
+    .box_course_cl3 {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      margin-right: 10px;
+      width: 13rem;
+    }
+    .flex_container_text {
+      display: flex;
+      gap: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      .text_course {
+        font-style: italic;
+      }
+    }
+    .description_box {
+      display: flex;
+      justify-content: left;
+      padding-top: 1rem;
+      textarea {
+        padding: 18px;
+        outline: none;
+        resize: none;
+        font-size: 16px;
+        border-radius: 5px;
+        border-color: $soft-bg;
+      }
+    }
+    .title_items {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+  }
+
+  .content {
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+}

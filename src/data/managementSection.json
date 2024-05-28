@@ -1,0 +1,16 @@
+{
+    "blocks": [
+        {
+            "id": 1,
+            "title": "Math Scholarship Preparation Course: Get a Step Ahead",
+            "description": "This course will help you prepare for math scholarships by providing you with the knowledge and skills you need to succeed. You will learn how to write strong essays, prepare for interviews, and research scholarships.",
+            "image": "https://stepmathlive.s3.amazonaws.com/stepmaths/wp-content/uploads/2017/02/planner.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Math Scholarship Success: The Ultimate Guide",
+            "description": "This course will walk you through the entire process of applying for math scholarships, from finding scholarships to writing essays to preparing for interviews. You will learn everything you need to know to increase your chances of winning a scholarship.",
+            "image": "https://th.bing.com/th/id/R.3e577df58cb557c572bbba9e5b0753f8?rik=ZkcSz41NXORWkw&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fmath-transparent-background%2fmath-transparent-background-2.png&ehk=Vz3GHzuRguWLNC%2bF2Cc95WRvDqWhjPaLYmhWmL%2fpmlU%3d&risl=&pid=ImgRaw&r=0"
+        }
+    ]
+}

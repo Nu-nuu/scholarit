@@ -1,0 +1,70 @@
+.multi-button {
+  font-size: 4vmin;
+  background: linear-gradient(90deg, #20c174 0%, #d9e7ff 100%);
+  color: #4a5568;
+  border: 0px solid #a0aec0;
+  margin: 0.1em;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease,
+    transform 0.2s ease;
+  box-shadow: 0 0 0 #bee3f8;
+  transform: translateY(0);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-weight: 700;
+}
+
+.multi-button:hover {
+  background: #d37731;
+  color: #fff;
+  box-shadow: 0 0 0.8em 0 rgba(220, 111, 22, 0.8);
+  transform: translateY(-0.2em);
+}
+
+.potition-multi-button {
+  padding-left: 90px;
+  padding-top: 50px;
+}
+.pagination {
+  padding-left: 325px;
+  padding-top: 45px;
+}
+
+.button-to-everything {
+  width: 143px;
+  height: 36px;
+  border: none;
+  background-color: #f38f44;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  /* box-shadow: 0 0 0.8em 0 rgba(220, 111, 22, 0.8); */
+  
+}
+
+
+.text-currently-chap {
+  color: white;
+}
+
+.text-currently-number {
+  color: #fda94f;
+  width: 600;
+  font-size: 80px;
+  font: Poppins;
+  line-height: 120px;
+  font-weight: 600;
+}
+
+.text-topic {
+  width: 383px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  color: #000000b2;
+  padding-top: 2px;
+}
+
+.aaaaaaaa{
+  border-radius: 20px;
+}

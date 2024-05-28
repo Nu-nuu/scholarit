@@ -1,0 +1,93 @@
+.courseDetail .cD_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.courseDetail .cD_header_text {
+    font-size: 21px;
+    font-weight: 600;
+}
+.courseDetail_left {
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 3px 1px 10px 0px #2e2e2e;
+    min-height: 780px;
+}
+.courseDetail_left .flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.courseDetail_left .top_box {
+    display: flex;
+    gap: 45px;
+    margin-bottom: 50px;
+}
+.courseDetail_left .top_img {
+    width: 350px;
+    border-radius: 10px;
+}
+.courseDetail_left .top_header {
+    color: #2d4285;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.courseDetail_left .top_list_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.courseDetail_left .top_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 25px;
+}
+.courseDetail_left .top_list_item_span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.courseDetail_left .top_money {
+    background-color: #e8eef6;
+    width: fit-content;
+    padding: 13px 30px;
+    border-radius: 15px;
+    color: #2d4285;
+    font-weight: bold;
+    font-size: 21px;
+}
+.courseDetail_left .mid_box {
+    margin-bottom: 40px;
+    border-bottom: solid 2px #2d4285;
+    padding-bottom: 40px;
+}
+.courseDetail_left .mid_header {
+    color: #2d4285;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.courseDetail_left .mid_list_item {
+    margin-left: 20px;
+}
+.courseDetail_left .bottom_header {
+    color: #2d4285;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.courseDetail_left .bottom_icon {
+    background-color: #e8eef6;
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.courseDetail_left .bottom_text {
+    max-width: 245px;
+}

@@ -1,0 +1,31 @@
+.footer {
+    background: #314995;
+    justify-content: center;
+    color: white;
+    padding: 30px;
+}
+
+.footer .flex-center {
+    display: flex;
+    /* justify-content: center; */
+    gap: 40px;
+}
+
+.footer .flex-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.footer .title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer .text {
+    font-weight: 200;
+    font-size: 14px;
+    font-family: monospace;
+}

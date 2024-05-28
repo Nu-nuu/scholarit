@@ -1,0 +1,168 @@
+.homepage .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homepage_top_box {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #314995;
+    border-radius: 13px;
+    box-shadow: 3px 1px 10px 0px #2e2e2e;
+    padding: 30px;
+}
+.homepage_top_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.homepage_top_left_text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.homepage_top_header {
+    font-size: 28px;
+    font-weight: 600;
+}
+.homepage_top_info {
+    font-size: 23px;
+    font-weight: 550;
+}
+.homepage_top_desc {
+    font-size: 15px;
+    font-weight: 300;
+}
+.homepage_search_box {
+    border: white solid 2px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    padding: 5px 21px;
+    color: white;
+    gap: 10px;
+}
+.homepage_search_text {
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    width: 100%;
+}
+.homepage_search_text::placeholder {
+    color: white;
+}
+.homepage_top_img {
+    width: 500px;
+    height: 400px;
+    border-radius: 17px;
+}
+.homepage_mid_header_box {
+    text-align: center;
+    border: solid 2px #314995;
+    padding: 10px;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 14px;
+    box-shadow: 3px 1px 10px 0px #2e2e2e;
+    cursor: default;
+    background-color: white;
+    margin-bottom: 60px;
+}
+.homepage_mid_header {
+    color: #314995;
+    font-size: 20px;
+    font-weight: 600;
+}
+.homepage_mid_box {
+    margin-top: 60px;
+}
+.homepage_mid_text {
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 97px;
+    padding-bottom: 10px;
+}
+
+.homepage .newCourse {
+    background-color: #5d6da0;
+    box-shadow: 3px 1px 10px 0px #2e2e2e;
+    border-radius: 20px;
+    color: white;
+    width: 90%;
+    cursor: pointer;
+}
+.homepage .newCourse_bg {
+    background-color: white;
+    color: black;
+    box-shadow: 3px 1px 10px 0px #2e2e2e;
+    border-radius: 20px;
+    width: 90%;
+    cursor: pointer;
+}
+.homepage .bg{
+    background: linear-gradient(rgba(49, 125, 149, 1), rgba(49, 73, 149, 0.72));
+    border-radius: 15px;
+    padding: 20px;
+    min-height: 531px;
+}
+.homepage .newCourse_img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 350px;
+}
+.homepage .newCourse_text_box {
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.homepage .newCourse_header {
+    font-weight: 550;
+    font-size: 20px;
+}
+.homepage .newCourse_desc {
+    font-size: 14px;
+    font-weight: 350;
+}
+.homepage .course_box {
+    position: relative;
+    color: #000;
+    padding: 25px;
+    background: linear-gradient(rgba(49, 125, 149, 1), rgba(49, 73, 149, 0.72));
+    box-shadow: 3px 1px 10px 0px #2e2e2e;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.homepage .course {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 3px 1px 10px 0px #2e2e2e;
+    border-radius: 20px;
+    padding: 2% 8%;
+    width: 90%;
+    cursor: pointer;
+}
+.homepage .course_green {
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    background-color: lime;
+}
+.homepage .course_yellow {
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    background-color: yellow;
+}
+.homepage .course_red {
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    background-color: red;
+}

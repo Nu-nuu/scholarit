@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="MongoDb" id="Project-8bc" database="MongoDb" >
+	<schema name="vnHistory" >
+		<table name="events" virtual="y" >
+			<column name="_id" type="objectId" length="800" decimal="0" jt="-8" mandatory="y" />
+			<column name="name" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="startYear" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="endYear" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="description" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="imageList" type="array[string]" length="800" decimal="0" jt="2003" mandatory="y" />
+			<column name="documentEvent" type="array[object]" length="800" decimal="0" jt="4999545" mandatory="y" >
+				<column name="contentTitle" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+				<column name="content" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			</column>
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+			<index name="name_1" unique="UNIQUE_KEY" >
+				<column name="name" />
+			</index>
+		</table>
+		<table name="questionbanks" virtual="y" >
+			<column name="_id" type="objectId" length="800" decimal="0" jt="-8" mandatory="y" />
+			<column name="title" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="questions" type="array[object]" length="800" decimal="0" jt="4999545" mandatory="y" >
+				<column name="question" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+				<column name="options" type="array[string]" length="800" decimal="0" jt="2003" mandatory="y" />
+				<column name="correctAnswer" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+				<column name="selectedAnswer" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+				<column name="isCorrect" type="Boolean" length="800" decimal="0" jt="12" mandatory="y" />
+				<column name="_id" type="objectId" length="800" decimal="0" jt="-8" mandatory="y" />
+			</column>
+			<column name="event" type="objectId" length="800" decimal="0" jt="-8" mandatory="y" />
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+			<index name="title_1" unique="UNIQUE_KEY" >
+				<column name="title" />
+			</index>
+			<fk name="Relationship" virtual="y" to_schema="vnHistory" to_table="events" >
+				<fk_column name="event" pk="_id" />
+			</fk>
+		</table>
+		<table name="quizzes" virtual="y" >
+			<column name="_id" type="objectId" length="800" decimal="0" jt="-8" mandatory="y" />
+			<column name="title" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="image" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="questionbank" type="objectId" length="800" decimal="0" jt="-8" mandatory="y" />
+			<column name="score" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="date" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+			<index name="title_1" unique="UNIQUE_KEY" >
+				<column name="title" />
+			</index>
+			<fk name="Relationship" virtual="y" to_schema="vnHistory" to_table="questionbanks" >
+				<fk_column name="questionbank" pk="_id" />
+			</fk>
+		</table>
+		<table name="users" virtual="y" >
+			<column name="_id" type="objectId" length="800" decimal="0" jt="-8" mandatory="y" />
+			<column name="username" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="password" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="fullname" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="role" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="quizHistory" type="array[object]" length="800" decimal="0" jt="4999545" >
+				<column name="quiz" type="objectId" length="800" decimal="0" jt="-8" mandatory="y" />
+				<column name="_id" type="objectId" length="800" decimal="0" jt="-8" mandatory="y" />
+			</column>
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+			<index name="username_1" unique="UNIQUE_KEY" >
+				<column name="username" />
+			</index>
+			<fk name="Relationship" virtual="y" to_schema="vnHistory" to_table="quizzes" >
+				<fk_column name="quizHistory.quiz" pk="_id" />
+			</fk>
+		</table>
+	</schema>
+	<connector name="MongoDb" database="MongoDb" driver_class="com.wisecoders.dbschema.mongodb.JdbcDriver" driver_jar="mongojdbc4.8.1.jar" url="mongodb+srv://kiofa:12345@quan.ufckhig.mongodb.net/" host="localhost" port="27017" instance="vnHistory" user="kiofa" passwd="MTIzNDU=" useSystemProxy="false" />
+	<layout name="Main Layout" id="Layout-1145" show_relation="name" >
+		<entity schema="vnHistory" name="events" column="documentEvent" color="BED3F4" x="880" y="464" />
+		<entity schema="vnHistory" name="events" color="BED3F4" x="864" y="256" />
+		<entity schema="vnHistory" name="questionbanks" color="F4DDBE" x="320" y="224" />
+		<entity schema="vnHistory" name="questionbanks" column="questions" color="F4DDBE" x="304" y="384" />
+		<entity schema="vnHistory" name="users" column="quizHistory" color="C7F4BE" x="864" y="848" />
+		<entity schema="vnHistory" name="quizzes" color="BEBEF4" x="320" y="704" />
+		<entity schema="vnHistory" name="users" color="C7F4BE" x="848" y="656" />
+		<callout x="48" y="80" pointer="Round" >
+			<comment><![CDATA[This is a layout. 
+- Double-click collection headers or fields to edit the validation rules 
+- Drag collections to the layout from the structure tree, or 
+   add them by pressing the arrow icon near fields 
+- Create multiple layouts with the same or different collections 
+- Right-click the layout to design new collections]]></comment>
+		</callout>
+		<group name="Collection &#039;quizzes&#039;" color="ECECF7" >
+			<entity schema="vnHistory" name="quizzes" />
+		</group>
+		<group name="Collection &#039;events&#039;" color="ECF0F7" >
+			<entity schema="vnHistory" name="events" />
+			<entity schema="vnHistory" name="events" column="documentEvent" />
+		</group>
+		<group name="Collection &#039;quizHistory&#039;" color="EEF7EC" >
+			<entity schema="vnHistory" name="users" column="quizHistory" />
+			<entity schema="vnHistory" name="users" />
+		</group>
+		<group name="Collection &#039;questions&#039;" color="F7F2EC" >
+			<entity schema="vnHistory" name="questionbanks" column="questions" />
+			<entity schema="vnHistory" name="questionbanks" />
+		</group>
+	</layout>
+	<layout name="~Layout with Sample Tools" id="Layout-b56" show_column_type="y" show_relation="name" >
+		<entity schema="vnHistory" name="events" column="documentEvent" color="BED3F4" x="384" y="288" />
+		<entity schema="vnHistory" name="events" color="BED3F4" x="352" y="80" />
+		<entity schema="vnHistory" name="questionbanks" color="F4DDBE" x="48" y="80" />
+		<entity schema="vnHistory" name="questionbanks" column="questions" color="F4DDBE" x="48" y="240" />
+		<entity schema="vnHistory" name="users" column="quizHistory" color="C7F4BE" x="384" y="720" />
+		<entity schema="vnHistory" name="quizzes" color="BEBEF4" x="48" y="528" />
+		<entity schema="vnHistory" name="users" color="C7F4BE" x="352" y="528" />
+		<group name="quizzes" color="ECECF7" >
+			<entity schema="vnHistory" name="quizzes" />
+		</group>
+		<group name="events" color="ECF0F7" >
+			<entity schema="vnHistory" name="events" />
+			<entity schema="vnHistory" name="events" column="documentEvent" />
+		</group>
+		<group name="quizHistory" color="EEF7EC" >
+			<entity schema="vnHistory" name="users" column="quizHistory" />
+			<entity schema="vnHistory" name="users" />
+		</group>
+		<group name="questions" color="F7F2EC" >
+			<entity schema="vnHistory" name="questionbanks" column="questions" />
+			<entity schema="vnHistory" name="questionbanks" />
+		</group>
+		<script name="Query Editor" id="Editor-205a" language="SQL" >
+			<string><![CDATA[vnHistory.questionbanks.find()
+
+//OR
+
+USE vnHistory;
+db.questionbanks.find()
+
+//OR
+
+USE vnHistory;
+db.getCollection('questionbanks').find()]]></string>
+		</script>
+		<browser id="Browse-8a2" name="Relational Data Explorer" confirm_updates="y" >
+			<browse_table schema="vnHistory" entity="questionbanks" x="20" y="20" width="400" height="300" record_view="y" >
+				<browse_table schema="vnHistory" entity="quizzes" fk="Relationship" x="440" y="20" width="500" height="350" record_view="y" >
+					<browse_table schema="vnHistory" entity="users" fk="Relationship" x="960" y="20" width="500" height="350" record_view="y" />
+				</browse_table>
+			</browse_table>
+		</browser>
+		<query id="Query-1fc" name="Query Builder" >
+			<query_table schema="vnHistory" name="questionbanks" alias="questionbanks" x="48" y="48" >
+				<column name="_id" />
+				<column name="title" />
+				<column name="questions" />
+				<column name="event" />
+				<query_table schema="vnHistory" name="quizzes" alias="quizzes" x="336" y="48" fk="Relationship" type="Inner Join" >
+					<column name="_id" />
+					<column name="title" />
+					<column name="image" />
+					<column name="questionbank" />
+					<column name="score" />
+					<column name="date" />
+					<query_table schema="vnHistory" name="users" alias="users" x="560" y="48" fk="Relationship" type="Inner Join" >
+						<column name="_id" />
+						<column name="username" />
+						<column name="password" />
+						<column name="fullname" />
+						<column name="role" />
+						<column name="quizHistory" />
+					</query_table>
+				</query_table>
+			</query_table>
+		</query>
+		<form name="Report" id="Report-16d0" template="Page" css="container-fluid" view="frame" >
+			<var name="samplePageNumber" type="4" value="0" mandatory="n" />
+			<var name="sampleRecordsPerPage" type="4" value="100" mandatory="n" />
+			<body name="Body" template="Grid" pos="0,0,0,0,f,f" layout="{{-2,-2,-2,-2,-1},{-2,-2,-2,-2}}" scroll="n" html="n" >
+				<cell type="label" name="Questionbanks Data" template="H3" pos="0,0,1,0,l,c" />
+				<cell type="chart" name="Pie" template="Pie" pos="0,1,4,1,l,c" max_records="20" >
+					<form_script type="DataSource" language="SQL" >
+						<var name="_id" type="-8" />
+						<var name="title" />
+						<var name="questions" type="4999545" />
+						<var name="event" type="-8" />
+						<script ><![CDATA[vnHistory.questionbanks.find()]]></script>
+					</form_script>
+					<param name="i0" value="title" />
+					<param name="width" value="100%" />
+					<param name="title" value="Sample Chart" />
+					<param name="height" value="400px" />
+				</cell>
+				<tableview name="sample" template="Table" css="table table-striped table-sm table-hover" pos="0,2,4,2,f,f" layout="{{-2,-2,-2,-2,-2},{-2,-2}}" scroll="n" html="n" header_rows="1" >
+					<form_script type="DataSource" language="SQL" >
+						<var name="_id" type="-8" />
+						<var name="title" />
+						<var name="questions" type="4999545" />
+						<var name="event" type="-8" />
+						<script ><![CDATA[vnHistory.questionbanks.find()]]></script>
+					</form_script>
+					<cell type="label" name="_id" pos="0,0,0,0,c,c" />
+					<cell type="label" name="title" pos="1,0,1,0,c,c" />
+					<cell type="label" name="questions" pos="2,0,2,0,c,c" />
+					<cell type="label" name="event" pos="3,0,3,0,c,c" />
+					<cell type="label" name="Button can open other pages." pos="4,0,4,0,c,c" />
+					<cell type="label" name="${_id}" template="Plain" pos="0,1,0,1,l,c" />
+					<cell type="label" name="${title}" template="Plain" pos="1,1,1,1,l,c" />
+					<cell type="label" name="${questions}" template="Plain" pos="2,1,2,1,l,c" />
+					<cell type="label" name="${event}" template="Plain" pos="3,1,3,1,l,c" />
+					<cell type="button" name="More" template="Plain" css="btn btn-sm btn-secondary" pos="4,1,4,1,c,c" ref_id="Report-16d0" />
+				</tableview>
+				<cell type="href" name="" disabled="${samplePageNumber&lt;1}" pos="0,3,0,3,l,c" glyph="bi-chevron_double_left" ref_id="Report-16d0" >
+					<var name="samplePageNumber" value="0" />
+				</cell>
+				<cell type="href" name="" disabled="${samplePageNumber&lt;1}" pos="1,3,1,3,l,c" glyph="bi-chevron_left" ref_id="Report-16d0" >
+					<var name="samplePageNumber" value="${Math.max(0,samplePageNumber-1)}" />
+				</cell>
+				<cell type="label" name="Page ${samplePageNumber+1}" pos="2,3,2,3,l,c" />
+				<cell type="href" name="" disabled="${!sampleHasNextPage}" pos="3,3,3,3,l,c" glyph="bi-chevron_right" ref_id="Report-16d0" >
+					<var name="samplePageNumber" value="${( samplePageNumber+1 )}" />
+				</cell>
+			</body>
+		</form>
+	</layout>
+</project>

@@ -1,0 +1,71 @@
+@import "../../style/variables.scss";
+@import "../../style/responsive.scss";
+
+.quiz_bank_page {
+  .quiz_header {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    .quiz_material {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+  .quiz_body {
+    margin-top: 1rem;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid $soft-bg;
+    background-color: $dark-bg;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid $soft-bg;
+      }
+
+      th {
+        color: $main-color;
+        font-weight: bold;
+      }
+
+      td {
+        input[type="text"] {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid $soft-bg;
+          border-radius: 4px;
+          background-color: $soft-bg;
+          color: $main-color;
+        }
+
+        button {
+          padding: 6px 12px;
+          margin-right: 5px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        .quiz_material {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+    }
+    .question_pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+  }
+}
