@@ -3,7 +3,7 @@ import { getAnalytics } from "firebase/analytics";
 import { getStorage } from "firebase/storage"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCr6W2b8MAyELF9qHjpys82MK1pAIuEn5Q",
+  apiKey: "",
   authDomain: "fa-training-e494d.firebaseapp.com",
   projectId: "fa-training-e494d",
   storageBucket: "fa-training-e494d.appspot.com",
